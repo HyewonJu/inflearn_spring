@@ -1,0 +1,19 @@
+spring:
+#  datasource:
+#    url: jdbc:h2:mem:test     # h2 database를 in-memory DB 모드로 사용 설정
+#    username: sa
+#    password:
+#    driver-class-name: org.h2.Driver
+#
+#  jpa:
+#    hibernate:
+#      ddl-auto: create-drop   # create하여 실행 후 drop , cf) create : drop 후 create
+#    properties:
+#      hibernate:
+#        # show_sql: true      # System.out에 hibernate 실행 SQL을 남긴다
+#        format_sql: true
+
+
+logging.level:
+  org.hibernate.SQL: debug    # logger를 통해 hibernate 실행 SQL을 남긴다
+#  org.hibernate.type: trace   # 쿼리 파라미터 로그 남겨준다
